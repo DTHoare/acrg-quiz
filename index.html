@@ -6,25 +6,38 @@
 </head>
 <body>
 
-<div class = "body">
-  This is a quiz. Can you get all the answers right?
-  <br><br>
-  <div class="container_graph">
-    <div draggable="true" class="box"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; </div>
-    <div draggable="true" class="box"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; </div>
-    <div draggable="true" class="box"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; </div>
-    <div draggable="true" class="box"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; </div>
-  </div>
+<div class="columns">
+  <div class = "body">
+    Guess which animal produces the most methane by moving the animals into the squares.
+    <br><br>
+    <div class="container_graph">
+      <div draggable="true" class="box"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; </div>
+      <div draggable="true" class="box"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; </div>
+      <div draggable="true" class="box"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; </div>
+      <div draggable="true" class="box"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; </div>
+    </div>
 
-  <div class="container">
-    <div draggable="true" class="box"><img src="images/human.png" style="max-width:100px; max-height:100px;"></img>Human</div>
-    <div draggable="true" class="box"><img src="images/pig.png" style="max-width:100px; max-height:100px;">Pig</div>
-    <div draggable="true" class="box"><img src="images/cow.png" style="max-width:100px; max-height:100px;">Cow</div>
-    <div draggable="true" class="box"><img src="images/sheep.png" style="max-width:100px; max-height:100px;">Sheep</div>
+    <div class="container">
+      <div draggable="true" class="box"><img src="images/human.png" style="max-width:100px; max-height:90px;"></img> Human</div>
+      <div draggable="true" class="box"><img src="images/pig.png" style="max-width:100px; max-height:90px;"> Pig</div>
+      <div draggable="true" class="box"><img src="images/cow.png" style="max-width:100px; max-height:90px;"> Cow</div>
+      <div draggable="true" class="box"><img src="images/sheep.png" style="max-width:100px; max-height:90px;"> Sheep</div>
+    </div>
+    <br><br>
+    <center>
+      <button class="button button1" onclick="checkAnswers()">Check Answers</button>
+      <button class="button button2" onclick="reset()">Reset</button>
+      <br>
+      <div id="message"></div>
+    </center>
   </div>
-  <br><br>
-  <button type="button" onclick="checkAnswers()">Check Answers</button>
-  <div id="message"></div>
+  <div class="sidebar">
+    <br><br><br><br><br>
+    <b>Did you know?</b>
+    <p style="font-size:16px">Click for more information!</p>
+    <button class="button button3" onclick="location.href='greenhouse-gases.html';">The Greenhouse Gas Effect</button>
+    <button class="button button3" onclick="location.href='animals.html';">Animals and Methane</button>
+  </div>
 </div>
 
 </body>
