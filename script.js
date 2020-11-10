@@ -87,7 +87,7 @@ function checkAnswers() {
   for (var i = 0, len = items.length; i < len; ++i) {
     if (items[i].textContent.indexOf(answers[i]) == -1){
       console.log("Incorrect")
-      document.getElementById("message").textContent = "Not quite - try again!"
+      document.getElementById("message").textContent = "Not quite - try again! For some clues, read the 'Animals and Methane' page."
       return 0;
     }
   }
